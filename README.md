@@ -8,14 +8,11 @@ Work on this is on a need come basis. As we find ourselves writing tests for Map
 If you have a feature in mapbox-gl-js that you want supported here, please feel free to create an issue or open a PR.
 
 
-### Fork by Qwant research 
-To feet ours need we have made some changes to the mock library :
+### Fork by Qwant Research
+To [foot their needs], Qwant Research has made some changes to the [original mock library](https://github.com/mapbox/mapbox-gl-js-mock) :
 
 - replace evented by a simple event mock with a prepare method
-- insert a clicable mapbox marker
+- insert a clickable mapbox marker
 - bind the map instance to window global as window.MAP_MOCK
-
-We have also added some missing properties and methods 
 - flyTo method
 - transform object (basic)
-
