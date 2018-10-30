@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mapbox/mapbox-gl-js-mock.git"
+    "url": "git+https://github.com/remix/mapbox-gl-js-mock/mapbox-gl-js-mock.git"
   },
   "scripts": {
     "test": "tape test/*test.js"
@@ -19,17 +19,16 @@
   "bugs": {
     "url": "https://github.com/mapbox/mapbox-gl-js-mock/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-js-mock#readme",
+  "homepage": "https://github.com/remix/mapbox-gl-js-mock",
   "dependencies": {
-    "@turf/bbox-polygon": "^5.0.4",
-    "@turf/buffer": "^5.0.4",
-    "@turf/union": "^5.0.4",
+    "@turf/bbox-polygon": "^6.0.1",
+    "@turf/buffer": "^5.1.5",
+    "@turf/union": "^6.0.3",
     "flow-remove-types": "^1.2.3",
-    "jsdom": "^11.6.2",
-    "mapbox-gl": "^0.44.1",
-    "sinon": "^4.3.0"
+    "mapbox-gl": "~0.50.0"
   },
   "devDependencies": {
-    "tape": "^4.8.0"
+    "jsdom": "^13.0.0",
+    "tape": "^4.9.1"
   }
 }

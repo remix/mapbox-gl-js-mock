@@ -58,10 +58,7 @@ var Map = function(options) {
   this.zoom = this.options.zoom || 0;
   this.center = this.options.center ? new LngLat(this.options.center[0], this.options.center[1]) : new LngLat(0, 0);
   this.style = new Style();
-  this.canvas = {
-    style: {
-    }
-  };
+  this.canvas = document.createElement('canvas');
   this.popups = [];
   this.transform = new Transform();
   this._controlCorners = {
