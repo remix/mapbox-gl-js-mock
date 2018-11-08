@@ -2,6 +2,7 @@ var Bounds = require('./bounds');
 var union = require('@turf/union');
 var bboxPolygon = require('@turf/bbox-polygon');
 var buffer = require('@turf/buffer');
+var Point = require('@mapbox/point-geometry');
 
 var LngLat = require('mapbox-gl').LngLat;
 var Evented = require('./evented');
@@ -217,7 +218,14 @@ Map.prototype.dragPan = {
   enable: function() {}
 };
 
-Map.prototype.project = function() {};
+Map.prototype.project = function(lnglat) {
+  return new Point(0, 0);
+};
+
+Map.prototype.unproject = function(point) {
+  point = point || { x: 0, y: 0};
+  return new LngLat((point.x || 0), (point.y || 0));
+};
 
 /**
  * Returns an array of features that overlap with the pointOrBox

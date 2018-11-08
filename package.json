@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/remix/mapbox-gl-js-mock",
   "dependencies": {
+    "@mapbox/point-geometry": "^0.1.0",
     "@turf/bbox-polygon": "^6.0.1",
     "@turf/buffer": "^5.1.5",
     "@turf/union": "^6.0.3",
