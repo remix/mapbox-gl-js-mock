@@ -25,8 +25,10 @@
     "@turf/bbox-polygon": "^6.0.1",
     "@turf/buffer": "^5.1.5",
     "@turf/union": "^6.0.3",
-    "flow-remove-types": "^1.2.3",
-    "mapbox-gl": "~0.50.0"
+    "flow-remove-types": "^1.2.3"
+  },
+  "peerDependencies": {
+    "mapbox-gl": "^0.50.0"
   },
   "devDependencies": {
     "jsdom": "^13.0.0",
